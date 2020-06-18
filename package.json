@@ -1,0 +1,29 @@
+{
+  "name": "bingo-card",
+  "version": "1.0.0",
+  "description": "A small UI for card schuffle & sort",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rach8garg/bingo-card-js.git"
+  },
+  "keywords": [
+    "assignment",
+    "maersk",
+    "js",
+    "html",
+    "css"
+  ],
+  "author": "rachigarg@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rach8garg/bingo-card-js/issues"
+  },
+  "homepage": "https://github.com/rach8garg/bingo-card-js#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

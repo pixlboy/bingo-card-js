@@ -1,5 +1,5 @@
 //static cache name
-const cacheName = `site-cache1`;
+const cacheName = `site-cache`;
 
 // activate event
 self.addEventListener('activate', evt => {

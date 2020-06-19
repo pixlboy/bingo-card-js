@@ -3,20 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-status-bar" content="#2B8EAD">
-    <meta name="theme-color" content="#2B8EAD">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    <meta name="theme-color" content="#000000">
 
     <title>Bingo Card</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+    <link rel="icon" href="./images/favicon.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
   </head>
   <body>
     <div id='container' class='container'>
-      <ul id='listContainer'></ul>
+      <div id="gridWrapper" class="grid-wrapper"></div>
+      <div class="control-wrapper">
+        <div class="control">
+          <button class="button" id="shuffle">Shuffle</button>
+        </div>
+        <div class="control">
+          <button class="button" id="sort">Sort</button>
+        </div>
+      </div>
     </div>
+    <footer class="footer">
+      Shuffle and sort by Rachit Garg
+    </footer>
     <script src='./scripts/register-sw.js' type='text/javascript'></script>
-    <script src='./scripts/app.js' type='text/javascript'></script>
+    <script type="module" src='./scripts/app.js' type='text/javascript'></script>
   </body>
 </html>

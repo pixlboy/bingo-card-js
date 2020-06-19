@@ -2,9 +2,10 @@
   "name": "bingo-card",
   "version": "1.0.0",
   "description": "A small UI for card schuffle & sort",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx http-server src -o"
   },
   "repository": {
     "type": "git",

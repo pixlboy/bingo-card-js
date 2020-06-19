@@ -1,5 +1,5 @@
-@import "./_variables.css";
-@import "./_normalize.css";
-@import "./_animations.css";
-@import "./_app.css";
-@import "./_media-screen.css";
+@import "/styles/_variables.css";
+@import "/styles/_normalize.css";
+@import "/styles/_animations.css";
+@import "/styles/_app.css";
+@import "/styles/_media-screen.css";

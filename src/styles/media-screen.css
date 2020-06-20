@@ -60,19 +60,7 @@
         border-color: var(--color-blue-light);
     }
     .color-5 {
-        border-color: var(--color-blue-dark);
-    }
-    .color-6 {
         border-color: var(--color-grey-dark);
-    }
-    .color-7 {
-        border-color: var(--color-grey-light);
-    }
-    .color-8 {
-        border-color: var(--color-blue-med);
-    }
-    .color-9 {
-        border-color: var(--color-blue-light);
     }
 
     .footer{

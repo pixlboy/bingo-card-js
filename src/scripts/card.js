@@ -1,8 +1,13 @@
-import {getSortedArray, getShuffledArray} from './utils.js';
+import {getSortedArray, getShuffledArray, getRandomNumber} from './utils.js';
 
 export class BingoCard {
-    constructor(id, length, isSorted){
-        this.containerId = id;
+    /*
+        @param - containerID - String - mandatory
+        @param - tiles - Number - optional
+        @param - isSorted - Boolean - optional
+    */ 
+    constructor(containerID, length, isSorted){
+        this.containerID = containerID;
         this.length = length ?? 9;
         this.isSorted = isSorted ?? true;
     }
@@ -15,23 +20,22 @@ BingoCard.prototype.getElementOrder = function(){
 }
 
 BingoCard.prototype.generate = function(){
-    const container = document.getElementById(this.containerId);
-    const listGrid = document.createElement('ul');
-    listGrid.id='listGrid';
-    listGrid.classList = "list-grid";
-    listGrid.innerHTML = this.addTiles();
-    container.innerHTML = '';   // make sure container is empty
-    container.append(listGrid);
+    const container = document.getElementById(this.containerID);
+    container.innerHTML = '';       // making sure the contents of container are empty
+    container.append(this.addTiles());
 }
 
 BingoCard.prototype.addTiles = function(){
-    let tiles = [];
+    const list = document.createElement('ul');
+    list.classList = "list-grid";
     this.elementOrder = this.isSorted ? getSortedArray(this.length) : getShuffledArray(this.length);
     this.elementOrder.forEach((item) => {
-        const template = `<li class="item color-${item}">${item}</li>`;
-        tiles.push(template);
+        const listItem = document.createElement('li');
+        listItem.innerHTML = item;
+        listItem.classList = `item color-${getRandomNumber(1,5)}`;
+        list.appendChild(listItem);
     });
-    return tiles.join("");
+    return list;
 }
 
 BingoCard.prototype.sort = function(){

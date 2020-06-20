@@ -6,6 +6,7 @@
 .grid-wrapper{
     flex: 4;
     overflow-y: auto;
+    height: 100%;
 }
 
 .control-wrapper{
@@ -34,6 +35,16 @@
     font-size: 3rem;
 }
 
+.control{
+    margin: 20px 10px;
+}
+
+.footer{
+    padding: 8px;
+    text-align: center;
+    height: var(--footer-height);
+}
+
 /* modifier classes */
 
 .color-1 {
@@ -50,54 +61,4 @@
 }
 .color-5 {
     background: var(--color-blue-dark);
-}
-.color-6 {
-    background: var(--color-grey-dark);
-}
-.color-7 {
-    background: var(--color-grey-light);
-}
-.color-8 {
-    background: var(--color-blue-med);
-}
-.color-9 {
-    background: var(--color-blue-light);
-}
-
-.control{
-    margin: 20px 10px;
-}
-
-.button{
-    background: var(--color-blue-light);
-    border: 0;
-    padding: 10px;
-    width: var(--btn-width);
-    box-shadow: 0 2px 1px 1px var(--color-blue-med);
-    border-radius: 4px;
-    text-transform: uppercase;
-    color: var(--color-white);
-    font-weight: 700;
-    font-size: .75rem;
-    cursor: pointer;
-    outline: none;
-    transition: background .7s;
-}
-
-.button:hover{
-    background: var(--color-blue-dark);
-}
-
-.button:active{
-    box-shadow: 0 1px 1px 1px var(--color-blue-med);
-}
-
-.footer{
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    padding: 8px;
-    text-align: center;
-    width: 100%;
-    height: var(--footer-height);
 }

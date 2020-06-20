@@ -1,16 +1,7 @@
 import {BingoCard} from './card.js';
 
 // Initialize the card
-/*
-    @param - containerID - String - mandatory
-    @param - tiles - Number - optional
-    @param - isSorted - Boolean - optional
-*/ 
-const containerID = 'gridWrapper';
-const tiles = 9;
-const isSorted = true;
-
-const card = new BingoCard(containerID, tiles, isSorted);
+const card = new BingoCard('gridWrapper', 9, true);
 
 //generate card
 card.generate();

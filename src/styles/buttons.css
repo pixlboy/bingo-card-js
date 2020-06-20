@@ -1,0 +1,23 @@
+.button{
+    background: var(--color-blue-light);
+    border: 0;
+    padding: 10px;
+    width: var(--btn-width);
+    box-shadow: 0 2px 1px 1px var(--color-blue-med);
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: .75rem;
+    cursor: pointer;
+    outline: none;
+    transition: background .7s;
+}
+
+.button:hover{
+    background: var(--color-blue-dark);
+}
+
+.button:active{
+    box-shadow: 0 1px 1px 1px var(--color-blue-med);
+}

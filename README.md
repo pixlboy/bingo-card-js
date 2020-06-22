@@ -15,8 +15,9 @@ This application is built as a PWA (Progressive Web App) and is optmised for mob
 
 ## Run Steps
 
-  - Run command `npm start`.
-  - This will launch the application your your default browser.
+  - Run `npm install` (only first time, one time installation)
+  - Run command `npm start`
+  - This will launch the application your your default browser
 
 ## PWA features
 
